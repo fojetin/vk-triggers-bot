@@ -1,0 +1,5 @@
+django
+vk_api
+
+gunicorn
+django-heroku
