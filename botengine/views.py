@@ -29,7 +29,7 @@ def vk_hook(request):
             print(type(raw_event), raw_event)
             if raw_event['object']['from_id'] == raw_event['object']['peer_id']:
                 print('Сообщение в ЛС')
-                id_nah(raw_event)
+                no_pm(raw_event)
             elif (raw_event['type'] == 'message_new'):
                 user_id = raw_event['object']['from_id']
                 print(user_id, raw_event)
