@@ -69,11 +69,3 @@ def lazy_logg(event):
     print('Текст:', event.obj.text)
 
 
-def no_pm(raw_event, vk=vk):
-    event = longpoll._parse_event(raw_event)
-    vk.messages.send(
-        chat_id=event.chat_id,
-        peer_id=event.obj.peer_id,
-        random_id=get_random_id(),
-        message='Я бот для чатов!\nНикаких ЛС!',
-    )
