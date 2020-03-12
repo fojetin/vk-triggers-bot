@@ -1,4 +1,4 @@
-django
+django==2.2
 vk_api
 
 gunicorn
